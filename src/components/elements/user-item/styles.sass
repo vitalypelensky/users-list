@@ -1,0 +1,49 @@
+.user
+  margin: 15px 0px
+  -webkit-box-shadow: 13px 11px 41px -13px rgba(0,0,0,0.75)
+  -moz-box-shadow: 13px 11px 41px -13px rgba(0,0,0,0.75)
+  box-shadow: 13px 11px 41px -13px rgba(0,0,0,0.75)
+  &:last-child
+    margin-bottom: 0px
+  &:first-child
+    margin-top: 0px
+  &__short-information
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    &--information
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      width: 100%
+      @media screen and (min-width: 768px)
+        width: auto
+
+    &--logo
+      width: 100%
+      font-size: 100px
+      text-align: center
+      font-weight: bold
+      background-color: darkcyan
+      @media screen and (min-width: 768px)
+        width: 100px
+        font-size: 90px
+    &--button
+      font-size: 18px
+      border: none
+      background: transparent
+      text-decoration: underline
+      cursor: pointer
+      margin-left: 20px
+      &:hover
+        color: #1A187D
+    &--control-buttons
+      width: 100%
+      padding: 20px 20px
+      text-align: center
+      @media screen and (min-width: 768px)
+        width: auto
+        padding: 0px 20px
+  &__more-information
+    padding: 20px
